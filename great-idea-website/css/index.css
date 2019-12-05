@@ -88,7 +88,6 @@ header .logo {
 }
 
 /*---------- top section ----------*/
-
 .section-top{
 	margin-top: 2%;
 }
@@ -102,12 +101,36 @@ header .logo {
 }
 
 .section-top button{
+	background: white;
 	position: relative;
 	top: -50px;
-    font-size: 25px;
-	background: white;
+	width: 45%;
+	font: inherit;
+	font-size: 15px;
+	padding: 2%;
+	border: 1px solid black;
 }
 
+.section-top button:hover{
+	background: black;
+  	color: white;
+ 	animation-duration: 1s;
+ 	animation-name: colorChange;
+}
+
+@keyframes colorChange {
+	0% {
+	  background-color: white;
+	}
+	50% {
+	  background-color: light black;
+	}
+	100% {
+	  background-color: black;
+	}
+  }
+
+/*---------- middle section ----------*/
 .section-middle{
 	margin-top: 2%;
 }
@@ -134,6 +157,7 @@ hr{
 	width: 100%;
 }
 
+/*---------- buttom section ----------*/
 .section-bottom{
 	margin-top: 2%;
 }
