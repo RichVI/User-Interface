@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,7 +48,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -64,3 +63,136 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+.main {
+	width: 900px;
+	margin: 0 auto;
+}
+
+/*---------- header ----------*/
+header {
+	display: inline-block;
+	background-image: linear-gradient(to right, black, white);;
+	border-radius: 20px;
+	position: fixed;
+	top: 0;
+}
+
+header .nav {
+	display: inline-block;	
+}
+
+header .nav a {
+	font-family: "Pacifico";
+	color: white;
+	position: relative;
+	top: -12px;
+	margin: 0 40px 0 10px;
+}
+
+
+header .logo {
+    margin-left: 91px;
+}
+
+/*---------- top section ----------*/
+.section-top {
+	margin-top: 5%;
+}
+
+.section-top .text {
+	text-align: center;
+	font-size: 80px;
+	width: 45%;
+	display: inline-block;
+	margin: 0% 9% 0 3%;
+}
+
+.section-top button {
+	background: white;
+	position: relative;
+	top: -50px;
+	width: 45%;
+	font: inherit;
+	font-size: 15px;
+	padding: 2%;
+	border: 1px solid black;
+}
+
+.section-top button:hover {
+	background: black;
+  	color: white;
+ 	animation-duration: 1s;
+ 	animation-name: colorChange;
+}
+
+@keyframes colorChange {
+	0% {
+	  background-color: white;
+	}
+	50% {
+	  background-color: light black;
+	}
+	100% {
+	  background-color: black;
+	}
+  }
+
+/*---------- middle section ----------*/
+.section-middle {
+	margin-top: 2%;
+}
+
+.section-middle .feature {
+	display: inline-block;
+	margin-right: 3.6%;
+	width: 48%;
+}
+
+.section-middle .about {
+	display: inline-block;
+	width: 48%;
+}
+
+hr{
+	background-color: black; 
+	height: 1px; 
+	border: 0;
+}
+
+.middle-img{
+	margin-top: 2%;
+	width: 100%;
+}
+
+/*---------- buttom section ----------*/
+.section-bottom{
+	margin-top: 2%;
+}
+
+.section-bottom .services{
+	display: inline-block;
+	margin-right: 4.5%;
+	width: 30%;
+}
+
+.section-bottom .product{
+	display: inline-block;
+	margin-right: 4.5%;
+	width: 30%;
+}
+
+.section-bottom .vision{
+	display: inline-block;
+	width: 30%;
+}
+
+/*---------- footer ----------*/
+footer{
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background-color: black;
+	color: white;
+	padding: 4px;
+	border-radius: 20px;
+}
